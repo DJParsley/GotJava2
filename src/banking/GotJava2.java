@@ -1,3 +1,4 @@
+package banking;
 
 public class GotJava2 {
 
