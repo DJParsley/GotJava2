@@ -10,7 +10,7 @@ class TestTransaction {
 
 	String description = "Billy's College Fund";
 	double amount = 120.45;
-	Transaction transaction = new Transaction(TransactionType.DEPOSIT, amount, description);
+	Transaction actual = new Transaction(TransactionType.DEPOSIT, amount, description);
 	
 	
 	@Test
@@ -34,8 +34,26 @@ class TestTransaction {
 	}
 
 	@Test
-	void testCompareTo() {
-		fail("Not yet implemented");
+	void testValidDescription() {
+		String actualDescription = "Billy's College Fund";
+		assertEquals(actualDescription, description);
 	}
-
+	
+	@Test
+	void testInvalidDescription() {
+		String actualDescription = "For: Will";
+		assertEquals(actualDescription, description);
+	}
+	
+	@Test
+	void testValidAmount() {
+		double actualAmount = 120.45;
+		assertEquals(actualAmount, amount);
+	}
+	
+	@Test
+	void testInvalidAmount() {
+		double actualAmount = 000000.45117;
+		assertEquals(actualAmount, amount);
+	}
 }
