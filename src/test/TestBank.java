@@ -4,62 +4,70 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import banking.Bank;
+
 class TestBank {
 
-	@Test
-	void testBank() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testBank() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testMain() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testMain() {
+		//fail("Not yet implemented");
+//	}
 
-	@Test
-	void testGetInsufficientFundsPenalty() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testGetInsufficientFundsPenalty() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testSetInsufficientFundsPenalty() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testSetInsufficientFundsPenalty() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testGetNAME() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testGetNAME() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testAddAccountWizard() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testAddAccountWizard() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testGetAllAccounts() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testGetAllAccounts() {
+	//	fail("Not yet implemented");
+	//}
 
-	@Test
-	void testAddCustomerWizard() {
-		fail("Not yet implemented");
-	}
+	//@Test
+	//void testAddCustomerWizard() {
+	//	fail("Not yet implemented");
+	//}
 // add customer tests
 	@Test
 	void testValidAddCustomer() {
 		
 		String firstName = "first";
 		String lastName = "last";
-
+        String result = "";
 	        //if the first name has anything but characters it would print false;
 			//if the last name has anything but characters it would print false
+		
+		try {
 			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
+				result = "All good";
 			}
 			else {
-				System.out.println("failed");
+				fail (result = "failed");
 			}
+		}
+		catch (Exception e){
+			
+		}
 			
 	}
 	
@@ -68,15 +76,21 @@ class TestBank {
 		
 		String firstName = "9taco";
 		String lastName = "last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 			
@@ -87,15 +101,21 @@ class TestBank {
 		
 		String firstName = "first";
 		String lastName = "9last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 			
@@ -106,17 +126,21 @@ class TestBank {
 		
 		String firstName = "9first";
 		String lastName = "9last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 	}
 	
@@ -125,15 +149,21 @@ class TestBank {
 		
 		String firstName = "!first";
 		String lastName = "last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 			
@@ -144,16 +174,21 @@ class TestBank {
 		
 		String firstName = "first";
 		String lastName = "!last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -163,16 +198,21 @@ class TestBank {
 		
 		String firstName = "!first";
 		String lastName = "!last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -181,16 +221,21 @@ class TestBank {
 		
 		String firstName = "";
 		String lastName = "last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -199,16 +244,21 @@ class TestBank {
 		
 		String firstName = "first";
 		String lastName = "";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -217,16 +267,21 @@ class TestBank {
 		
 		String firstName = "";
 		String lastName = "";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -236,16 +291,21 @@ class TestBank {
 		
 		String firstName = " ";
 		String lastName = "last";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -254,16 +314,21 @@ class TestBank {
 		
 		String firstName = "first";
 		String lastName = " ";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -272,16 +337,21 @@ class TestBank {
 		
 		String firstName = " ";
 		String lastName = " ";
-
-	        //if the first name has anything but characters it would print false;
-			//if the last name has anything but characters it would print false
-			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
-				System.out.println("All good");
-			}
-			else {
-				System.out.println("failed");
-			}
-			
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
 			
 			
 	}
@@ -290,11 +360,15 @@ class TestBank {
 	@Test
 	void testValidRemoveCustomer() {
 		int counter = 0;
-		while (counter < customers.size()) 
+		String result = "";
+		while (counter < Bank.customers.size()) 
 		{
 			if (customerId == customers[counter]) {
-				//System.out.println("All good");
+				result = "All good";
 				break;
+			}
+			if (counter == customers.size()) {
+				fail (result = "failed");
 			}
 			counter = counter + 1;
 		}
@@ -303,11 +377,15 @@ class TestBank {
 	
 	void testInvalidRemoveCustomer() {
 		int counter = 0;
+		String result = "";
 		while (counter < customers.size()) 
 		{
 			if (customerId == customers[counter]) {
-				//System.out.println("All good");
+				result = "All good";
 				break;
+			}
+			if (counter == customers.size()) {
+				fail (result = "failed");
 			}
 			counter = counter + 1;
 		}
@@ -326,14 +404,354 @@ class TestBank {
 		fail("Not yet implemented");
 	}
 
+	
+	//test getCustomer below
+	
 	@Test
-	void testGetCustomerStringString() {
-		fail("Not yet implemented");
+	void testValidGetCustomerStringString() {
+		
+		String firstName = "first";
+		String lastName = "last";
+        String result = "";
+	        //if the first name has anything but characters it would print false;
+			//if the last name has anything but characters it would print false
+		
+		try {
+			if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+				result = "All good";
+			}
+			else {
+				fail (result = "failed");
+			}
+		}
+		catch (Exception e){
+			
+		}
+			
 	}
-
+	
 	@Test
-	void testGetCustomersAccounts() {
-		fail("Not yet implemented");
+	void testInvalidGetCustomerStringString1() {
+		
+		String firstName = "9taco";
+		String lastName = "last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
 	}
+	catch (Exception e){
+		
+	}
+			
+			
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString2() {
+		
+		String firstName = "first";
+		String lastName = "9last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString3() {
+		
+		String firstName = "9first";
+		String lastName = "9last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString4() {
+		
+		String firstName = "!first";
+		String lastName = "last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString5() {
+		
+		String firstName = "first";
+		String lastName = "!last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString6() {
+		
+		String firstName = "!first";
+		String lastName = "!last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	@Test
+	void testInvalidGetCustomerStringString7() {
+		
+		String firstName = "";
+		String lastName = "last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	@Test
+	void testInvalidGetCustomerStringString8() {
+		
+		String firstName = "first";
+		String lastName = "";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	@Test
+	void testInvalidGetCustomerStringString9() {
+		
+		String firstName = "";
+		String lastName = "";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	
+	@Test
+	void testInvalidGetCustomerStringString10() {
+		
+		String firstName = " ";
+		String lastName = "last";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	@Test
+	void testInvalidGetCustomerStringString11() {
+		
+		String firstName = "first";
+		String lastName = " ";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	@Test
+	void testInvalidGetCustomerStringString12() {
+		
+		String firstName = " ";
+		String lastName = " ";
+		String result = "";
+        //if the first name has anything but characters it would print false;
+		//if the last name has anything but characters it would print false
+	
+	try {
+		if ((lastName.matches("[a-zA-Z]+"))&&(firstName.matches("[a-zA-Z]+"))) {
+			result = "All good";
+		}
+		else {
+			fail (result = "failed");
+		}
+	}
+	catch (Exception e){
+		
+	}
+			
+			
+	}
+	
+//test getCustomer above
+	//test getCustomersAccounts below
+	
+	@Test
+	void testValidGetCustomersAccounts() {
+		int counter = 0;
+		String result = "";
+		while (counter < customers.size()) 
+		{
+			if (customerId == customers[counter]) {
+				result = "All good";
+				break;
+			}
+			if (counter == customers.size()) {
+				fail (result = "failed");
+			}
+			counter = counter + 1;
+		}
+	
+	}
+	
+	void testInvalidGetCustomersAccounts() {
+		int counter = 0;
+		String result = "";
+		while (counter < customers.size()) 
+		{
+			if (customerId == customers[counter]) {
+				result = "All good";
+				break;
+			}
+			if (counter == customers.size()) {
+				fail (result = "failed");
+			}
+			counter = counter + 1;
+		}
+	
+	}
+	//test getCusomtersAccounts above
 
 }
