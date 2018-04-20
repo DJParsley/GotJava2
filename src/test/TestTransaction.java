@@ -19,12 +19,21 @@ class TestTransaction {
 	@Test
 	void testValidTransaction() {
 		
-		System.out.println("Inside testValidTransaction()");
+		// Tests for the correct String description.
+		assertEquals(description, "Billy's College Fund", "Description must be \"Billy's College Fund\"");
+		// Tests for the correct double amount.
+		assertEquals(amount, 120.45, "Amount must be 120.45");
 		
-		Assert.assertEquals(description, 
-				"^[A-Za-z.\\s_-]+$", "Invalid description.");
-		Assert.assertEquals(amount, 
-				"^\\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$", "Invalid amount.");
+	}
+	
+	@Test
+	void testInvalidTransaction() {
+		
+		// Tests for the correct String description.
+		assertEquals(description, "For: Will", "Description must be \"For: Will\"");
+		// Tests for the correct double amount.
+		assertEquals(amount, 50.64, "Amount must be 50.64");
+		
 	}
 
 	@Test
