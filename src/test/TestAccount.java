@@ -1,8 +1,8 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+import Java.lang.Object.*;
 
 class TestAccount {
 
@@ -161,12 +161,36 @@ return openDate;
 
 	@Test
 	void testEqualsObject() {
-		fail("Not yet implemented");
+
+public Tester(double test1, double test2){
+test1 = this.account;
+test2 = this.account;
+}
+Tester D1 = new Tester(10,20);
+Tester D2 = new Tester(10,21);
+if (D1.equals(D2))
+{
+println("The Objects Are Equal");
+}
+else
+{
+println("The Objects Are Not Equal");
+}
 	}
 
 	@Test
-	void testCompareTo() {
-		fail("Not yet implemented");
+	int testCompareTo() {
+string c1 = this.acctID;
+string c2 = "2345";
+if (!(c1 == c2))
+{
+string c3 = c1.compareTo(c2);
+println("Results: " + c3);
+}
+else
+{
+println("Both Items Are Equal Therefore No Comparison Is Possible");
+}
 	}
 
 	@Test
