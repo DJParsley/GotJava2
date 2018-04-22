@@ -61,18 +61,31 @@ intRate = 6.0;
 }
 
 	@Test
-	void testAddInterestTransaction() {
-		fail("Not yet implemented");
+	void testAddInterestTransaction(double saveAccount,  double goodInt, double calcInt) {
+saveAccount = testSavingsAccount.startBalance;
+goodInt = testSavingsAccount.intRate;
+
+if (saveAccount > 100)
+{
+calcInt = (intRate / 100)  * saveAccount;
+saveAccount = saveAccount + calcInt;
+println("Interest Earned is: $" + calcInt + "And The Current Balance Is: $" + saveAccount);
+}
+else
+{
+println("Account Must Have Over $100 To Gain Interest");
+}
+
 	}
 
 	@Test
-	void testGetDefaultInterestRate() {
-		fail("Not yet implemented");
+	double testGetDefaultInterestRate() {
+return defaultIntRate;
 	}
 
 	@Test
 	void testSetDefaultInterestRate() {
-		fail("Not yet implemented");
+defaultIntRate = testSavingsAccount.intRate;
 	}
 
 }
